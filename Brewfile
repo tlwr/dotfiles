@@ -1,8 +1,8 @@
 tap "cloudfoundry/tap"
 tap "github/gh"
 tap "homebrew/cask"
-tap "instrumenta/instrumenta"
 tap "homebrew/core"
+tap "instrumenta/instrumenta"
 
 brew "goenv"
 brew "pyenv"
