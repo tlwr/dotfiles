@@ -15,3 +15,5 @@ stow="stow -d $STOW_SRC -t $STOW_DST"
 
 $stow vim
 $stow neovim
+
+$stow scripts

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -ueo pipefail
+
+url="${1:?grind_url url rps duration ; url is required}"
+rps="${2:?grind_url url rps duration ; rps is required}"
+duration="${3:?grind_url url rps ; duration is required ; eg 5m}"
+
+headers=$(IFS=, eval 'echo "${@:4:$#-1}"')
+request="GET $url\n$headers"
+
+echo -e "$request"                               \
+  | vegeta attack                                \
+      -rate "$rps"                               \
+      -duration "$duration"                      \
+  | vegeta encode                                \
+  | agrind '* | json | count by code'
