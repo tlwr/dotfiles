@@ -1,6 +1,7 @@
 tap "cloudfoundry/tap"
 tap "github/gh"
 tap "homebrew/cask"
+tap "instrumenta/instrumenta"
 tap "homebrew/core"
 
 brew "goenv"
