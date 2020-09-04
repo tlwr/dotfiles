@@ -1,4 +1,4 @@
-tap "cloudfoundry/cli"
+tap "cloudfoundry/tap"
 tap "github/gh"
 tap "homebrew/cask"
 tap "homebrew/core"
