@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if ! command -v brew 2>&1 >/dev/null; then
+	echo "Please install homebrew"
+	exit 1
+fi
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+STOW_SRC="$DIR/../stow"
+STOW_DST="$HOME"
+stow="stow -d $STOW_SRC -t $STOW_DST"
+
+$stow vim
+$stow neovim
