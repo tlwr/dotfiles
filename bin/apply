@@ -2,12 +2,22 @@
 
 set -euo pipefail
 
-if ! command -v brew 2>&1 >/dev/null; then
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+if ! command -v brew > /dev/null 2>&1; then
 	echo "Please install homebrew"
 	exit 1
 fi
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+(
+  cd "$DIR/.."
+  brew bundle
+)
+
+if ! command -v stow > /dev/null 2>&1; then
+  echo "Please install stow"
+  exit 1
+fi
 
 STOW_SRC="$DIR/../stow"
 STOW_DST="$HOME"
