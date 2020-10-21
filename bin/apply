@@ -26,6 +26,7 @@ stow="stow -d $STOW_SRC -t $STOW_DST"
 $stow git
 $stow vim
 $stow neovim
+$stow rubocop
 
 $stow scripts
 
