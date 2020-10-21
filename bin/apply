@@ -28,3 +28,8 @@ $stow vim
 $stow neovim
 
 $stow scripts
+
+(
+  cd "$DIR/.."
+  bundle install
+)
