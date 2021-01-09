@@ -8,3 +8,4 @@ export EDITOR=vim
 if [ "$(uname)" = "Darwin" ]; then
   export SSH_AUTH_SOCK=/Users/toby/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 fi
+eval "$(rbenv init -)"
