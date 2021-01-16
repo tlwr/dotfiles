@@ -31,5 +31,9 @@ done
 echo
 attempts=0
 
-addr="$(arp -a -i bridge100 | grep -vF .255 | grep -Eo '192.168.64.[0-9]{1,}')"
+addr="$(arp -a -i bridge100 \
+  | grep -v incomplete \
+  | grep -vF .255 \
+  | grep -Eo '192.168.64.[0-9]{1,}' \
+)"
 ssh "root@$addr"
