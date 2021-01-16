@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -ueo pipefail
+IFS=$'\n\t'
+
+attempts=0
+
+echo -n waiting for bridge100...
+while ! ifconfig bridge100 >/dev/null 2>&1; do
+  echo -n .
+
+  attempts=$((attempts+1))
+  sleep 1
+
+  [ $attempts -gt 5 ] && (echo bailing ; exit 1)
+done
+
+echo
+attempts=0
+
+echo -n waiting for arp...
+while ! arp -a -i bridge100  >/dev/null 2>&1; do
+  echo -n .
+
+  attempts=$((attempts+1))
+  sleep 1
+
+  [ $attempts -gt 5 ] && (echo bailing ; exit 1)
+done
+
+echo
+attempts=0
+
+addr="$(arp -a -i bridge100 | grep -vF .255 | grep -Eo '192.168.64.[0-9]{1,}')"
+ssh "root@$addr"
