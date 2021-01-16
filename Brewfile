@@ -4,6 +4,8 @@ tap "homebrew/core"
 tap "instrumenta/instrumenta"
 tap "nvie/tap"
 
+brew "watch"
+
 brew "goenv"
 brew "pyenv"
 brew "rbenv"
