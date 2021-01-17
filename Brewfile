@@ -4,6 +4,10 @@ tap "homebrew/core"
 tap "instrumenta/instrumenta"
 tap "nvie/tap"
 
+brew "bash"
+brew "htop"
+brew "tmux"
+brew "tree"
 brew "watch"
 
 brew "goenv"
