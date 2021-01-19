@@ -6,6 +6,7 @@
   c = commit
 	co = checkout
 
+  cb = current-branch
 	cp = cherry-pick
 	cpc = cherry-pick --continue
   cpa = cherry-pick --abort
@@ -15,6 +16,7 @@
 	pl = pull
   p = push
 
+  r = root
   rb = rebase --allow-empty-message -i
   rbc = rebase --continue
   rba = rebase --abort
