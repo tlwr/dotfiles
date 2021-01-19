@@ -1,0 +1,32 @@
+[hub]
+	protocol = ssh
+
+[alias]
+	b = branch
+  c = commit
+	co = checkout
+
+	cp = cherry-pick
+	cpc = cherry-pick --continue
+  cpa = cherry-pick --abort
+
+	d = diff
+	lo = log --oneline
+	pl = pull
+  p = push
+
+  rb = rebase --allow-empty-message -i
+  rbc = rebase --continue
+  rba = rebase --abort
+
+  s = status
+
+  pls = commit -svp
+  amen = commit -svp --amend
+
+[user]
+	name = toby lorne
+	email = toby@toby.codes
+
+[pull]
+	rebase = true
