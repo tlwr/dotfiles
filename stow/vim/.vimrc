@@ -91,7 +91,7 @@ set statusline+=%*
 
 set iskeyword-=_
 
-set colorcolumn=80
+set colorcolumn=120
 highlight ColorColumn ctermbg=5
 
 let g:NERDCommentEmptyLines = 1
