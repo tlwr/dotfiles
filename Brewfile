@@ -10,6 +10,7 @@ brew "tmux"
 brew "tree"
 brew "watch"
 brew "bat"
+brew "fzf"
 
 brew "goenv"
 brew "pyenv"
@@ -23,6 +24,7 @@ brew "git"
 brew "git-lfs"
 brew "git-toolbelt"
 brew "hub"
+brew "nvim" unless OS.mac?
 
 brew "cfssl"
 brew "curl"
@@ -32,9 +34,10 @@ brew "kubectl" unless OS.mac?
 brew "conftest"
 
 brew "jq"
+brew "jid"
 brew "yamllint"
 
 brew "neofetch"
 brew "ykman"
 
-brew "nvim" unless OS.mac?
+brew "m-cli" if OS.mac?
