@@ -46,4 +46,11 @@ eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 
+alias v=vim
+alias d=docker
 alias g=git
+alias k=kubectl
+alias op=operator-tools
+alias tf=terraform
+
+command -v nvim >/dev/null && alias vim=nvim
