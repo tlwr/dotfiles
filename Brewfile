@@ -9,6 +9,7 @@ brew "htop"
 brew "tmux"
 brew "tree"
 brew "watch"
+brew "bat"
 
 brew "goenv"
 brew "pyenv"

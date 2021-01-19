@@ -54,3 +54,4 @@ alias op=operator-tools
 alias tf=terraform
 
 command -v nvim >/dev/null && alias vim=nvim
+command -v bat >/dev/null && alias cat=bat
