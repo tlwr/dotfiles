@@ -17,3 +17,5 @@ eval "$(goenv init -)"
 
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
+
+alias g=git
