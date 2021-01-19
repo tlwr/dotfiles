@@ -26,6 +26,7 @@ brew "hub"
 brew "cfssl"
 brew "curl"
 brew "angle-grinder" unless OS.mac?
+brew "kubectl" unless OS.mac?
 
 brew "conftest"
 
