@@ -36,4 +36,4 @@ brew "yamllint"
 brew "neofetch"
 brew "ykman"
 
-brew "nvim"
+brew "nvim" unless OS.mac?
