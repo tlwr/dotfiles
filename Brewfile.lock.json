@@ -8,10 +8,10 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "homebrew/cask": {
-        "revision": "1029c8e1192c4e3f0f2412a5aa2ad08bf658285c"
+        "revision": "db081f9fee86e16f9e7481a2c7c11efaedbaca21"
       },
       "homebrew/core": {
-        "revision": "d45808413234879c914502de8e2e8e71235b68f8"
+        "revision": "6eb65915230d4fa111b0887a24c07013c966c110"
       },
       "cloudfoundry/tap": {
         "revision": "cf07c46658f23487183be90c12b8575347acf0e9"
@@ -87,7 +87,7 @@
         }
       },
       "ruby-build": {
-        "version": "20201225",
+        "version": "20210119",
         "bottle": false
       },
       "tfenv": {
@@ -634,6 +634,31 @@
             }
           }
         }
+      },
+      "wget": {
+        "version": "1.21",
+        "bottle": {
+          "cellar": "/opt/homebrew/Cellar",
+          "prefix": "/opt/homebrew",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/wget-1.21.big_sur.bottle.tar.gz",
+              "sha256": "eb830909eed1e6d861968f324fd0701883df44f9d6e191c4e5ebbe2635cc70e7"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/wget-1.21.arm64_big_sur.bottle.tar.gz",
+              "sha256": "2824baa832bb6abe003371d42bab24df5afab5e4076922b2300a90a98526990b"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/wget-1.21.catalina.bottle.tar.gz",
+              "sha256": "d163d32bba98f0a535d179c5d8efd076d12f41bd9232f5c0a41523a4eeaeb500"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/wget-1.21.mojave.bottle.tar.gz",
+              "sha256": "6343b9c76468bf9ba05e587403b378b1bb93e5108c6505abef4eaaee92257e22"
+            }
+          }
+        }
       }
     }
   },
@@ -648,9 +673,9 @@
         "macOS": "10.14.6"
       },
       "big_sur": {
-        "HOMEBREW_VERSION": "2.7.5-68-g6e6c339",
+        "HOMEBREW_VERSION": "2.7.5-82-gea1affb",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "d45808413234879c914502de8e2e8e71235b68f8",
+        "Homebrew/homebrew-core": "6eb65915230d4fa111b0887a24c07013c966c110",
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "11.1"
