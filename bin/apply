@@ -35,3 +35,12 @@ $stow scripts
   cd "$DIR/.."
   bundle install
 )
+
+if ! command -v go > /dev/null 2>&1; then
+  echo "Please install go"
+  exit 1
+else
+  command -v ginkgo > /dev/null || github.com/onsi/ginkgo/ginkgo@latest
+  command -v merge-mgr > /dev/null || github.com/tlwr/merge-mgr@latest
+  command -v operator-tools > /dev/null || github.com/tlwr/operator-tools@latest
+fi
