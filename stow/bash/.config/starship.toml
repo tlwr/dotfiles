@@ -1,0 +1,25 @@
+[character]
+success_symbol = "[➜](bold green)"
+
+[git_branch]
+symbol = ""
+
+[git_commit]
+tag_symbol = "t/"
+
+[git_status]
+ahead = "▲"
+behind = "▼"
+diverged = "⇆"
+untracked = ""
+stashed = ""
+modified = "*"
+
+[hostname]
+format = "[$hostname]($style) in "
+ssh_only = false
+trim_at = ""
+
+[username]
+format = "[$user]($style)@"
+show_always = true
