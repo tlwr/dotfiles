@@ -56,5 +56,4 @@ alias tf=terraform
 command -v nvim >/dev/null && alias vim=nvim
 command -v bat >/dev/null && alias cat=bat
 
-source $HOME/.bash/prompt/git-prompt.sh
-PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w " "\\\$ ";'$PROMPT_COMMAND
+eval "$(starship init bash)"

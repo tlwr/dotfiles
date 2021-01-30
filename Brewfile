@@ -5,6 +5,7 @@ tap "instrumenta/instrumenta"
 tap "nvie/tap"
 
 brew "bash"
+brew "starship"
 brew "htop"
 brew "tmux"
 brew "tree"
