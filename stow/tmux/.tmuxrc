@@ -1,0 +1,4 @@
+bind r source-file ~/.tmux.conf \; display ".tmuxrc reloaded"
+
+bind -T copy-mode-vi o send -X copy-pipe "xargs -I {} open {}" \; display "opened selection"
+bind -T copy-mode-vi y send -X copy-pipe "pbcopy" \; display "copied to clipboard"

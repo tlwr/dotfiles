@@ -24,6 +24,7 @@ STOW_DST="$HOME"
 stow="stow -d $STOW_SRC -t $STOW_DST"
 
 $stow bash
+$stow tmux
 $stow git
 $stow vim
 $stow neovim
