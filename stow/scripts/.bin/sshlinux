@@ -33,7 +33,8 @@ attempts=0
 
 addr="$(arp -a -i bridge100 \
   | grep -v incomplete \
+  | grep -F 10. \
   | grep -vF .255 \
-  | grep -Eo '192.168.64.[0-9]{1,}' \
+  | grep -Eo '10.211.[0-9]{1,3}.[0-9]{1,}' \
 )"
-ssh "root@$addr"
+ssh "$addr"
