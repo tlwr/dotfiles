@@ -25,3 +25,9 @@ trim_at = ""
 [username]
 format = "[$user]($style)@"
 show_always = true
+
+[time]
+disabled = false
+format = "[$time]($style) "
+style = "bold white"
+time_format = "%F %Z %T"
