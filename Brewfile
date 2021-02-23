@@ -13,6 +13,7 @@ brew "watch"
 brew "bat"
 brew "fzf"
 
+brew "asdf"
 brew "goenv"
 brew "pyenv"
 brew "rbenv"
