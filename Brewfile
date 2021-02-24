@@ -25,6 +25,7 @@ brew "gh"
 brew "git"
 brew "git-lfs"
 brew "git-toolbelt"
+brew "gpg"
 brew "hub"
 brew "nvim" unless OS.mac?
 
