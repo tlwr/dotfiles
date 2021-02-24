@@ -57,3 +57,5 @@ command -v nvim >/dev/null && alias vim=nvim
 command -v bat >/dev/null && alias cat=bat
 
 eval "$(starship init bash)"
+
+export ASDF_DIR=$(brew --prefix asdf)
