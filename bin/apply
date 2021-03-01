@@ -50,7 +50,11 @@ fi
 if ! command -v pprof > /dev/null 2>&1; then
   (
     cd "$DIR/.."
-    curl -sf https://raw.githubusercontent.com/blainsmith/pprof.sh/main/pprof.sh > "./stow/scripts/.bin/pprof"
+
+    curl -sf \
+      "https://raw.githubusercontent.com/blainsmith/pprof.sh/d1aef274434b6a698524aef5976749fdd2ad5f39/pprof.sh" \
+      > "./stow/scripts/.bin/pprof"
+
     chmod +x "./stow/scripts/.bin/pprof"
   )
 fi
