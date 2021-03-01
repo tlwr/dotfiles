@@ -46,3 +46,11 @@ else
   command -v operator-tools > /dev/null || go get github.com/tlwr/operator-tools@latest
   command -v gopls > /dev/null || go get github.com/tlwr/operator-tools@latest
 fi
+
+if ! command -v pprof > /dev/null 2>&1; then
+  (
+    cd "$DIR/.."
+    curl -sf https://raw.githubusercontent.com/blainsmith/pprof.sh/main/pprof.sh > "./stow/scripts/.bin/pprof"
+    chmod +x "./stow/scripts/.bin/pprof"
+  )
+fi
