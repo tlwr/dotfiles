@@ -45,3 +45,5 @@ brew "neofetch"
 brew "ykman"
 
 brew "m-cli" if OS.mac?
+
+brew "stow"
