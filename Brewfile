@@ -5,6 +5,7 @@ tap "instrumenta/instrumenta"
 tap "nvie/tap"
 
 brew "bash"
+brew "bash-completion"
 brew "starship"
 brew "htop"
 brew "tmux"
@@ -34,6 +35,7 @@ brew "curl"
 brew "angle-grinder" unless OS.mac?
 brew "kubectl" unless OS.mac?
 brew "wget"
+brew "rsync"
 
 brew "conftest"
 
