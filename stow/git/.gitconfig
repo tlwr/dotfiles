@@ -1,19 +1,19 @@
 [hub]
-	protocol = ssh
+  protocol = ssh
 
 [alias]
-	b = branch
+  b = branch
   c = commit
-	co = checkout
+  co = checkout
 
   cb = current-branch
-	cp = cherry-pick
-	cpc = cherry-pick --continue
+  cp = cherry-pick
+  cpc = cherry-pick --continue
   cpa = cherry-pick --abort
 
-	d = diff
-	lo = log --oneline
-	pl = pull
+  d = diff
+  lo = log --oneline
+  pl = pull
   p = push
 
   r = root
@@ -27,11 +27,11 @@
   amen = commit -svp --amend
 
 [user]
-	name = toby lorne
-	email = toby@toby.codes
+  name = toby lorne
+  email = toby@toby.codes
 
 [pull]
-	rebase = true
+  rebase = true
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
