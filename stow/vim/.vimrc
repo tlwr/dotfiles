@@ -1,3 +1,9 @@
+function! SourceF(file)
+  if filereadable(expand(a:file))
+    exe 'source' a:file
+  endif
+endfunction
+
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
@@ -112,3 +118,5 @@ map gd :GoDef
 map tff :TerraformFmt
 
 color happy_hacking
+call SourceF("~/.vimrc_b")
+call SourceF("~/.vimrc_people")
