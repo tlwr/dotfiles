@@ -42,6 +42,7 @@ export GOENV_ROOT="$HOME/.goenv"
 
 eval "$(rbenv init -)"
 eval "$(goenv init -)"
+eval "$(pyenv init -)"
 
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
