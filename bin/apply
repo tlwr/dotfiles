@@ -24,6 +24,9 @@ STOW_DST="$HOME"
 stow="stow -d $STOW_SRC -t $STOW_DST"
 
 $stow bash
+
+source $HOME/.bash_profile
+
 $stow tmux
 $stow git
 $stow vim
