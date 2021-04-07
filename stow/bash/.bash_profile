@@ -34,7 +34,7 @@ else
   export VISUAL=vim
 fi
 
-if [ "$(uname)" = "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ] && [ "$(uname -m)" != "x86_64" ]; then
   export SSH_AUTH_SOCK=/Users/toby/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 fi
 
