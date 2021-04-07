@@ -60,3 +60,6 @@ command -v bat >/dev/null && alias cat=bat
 eval "$(starship init bash)"
 
 export ASDF_DIR=$(brew --prefix asdf)
+
+[ -f "$HOME/.bash_profile_b" ] && source "$HOME/.bash_profile_b"
+export PATH="$HOME/.bin:$PATH"
