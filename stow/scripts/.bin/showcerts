@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -ueo pipefail
+
+host="${1:?Enter a hostname}"
+port="${2:-443}"
+
+echo \
+  | openssl s_client -connect "${host}:${port}" -showcerts -verify 5 2>/dev/null \
+  | ruby -e 'puts STDIN.read[/-----BEGIN.*END CERTIFICATE-----/m]' \
+  | grep -vE '^\s'
