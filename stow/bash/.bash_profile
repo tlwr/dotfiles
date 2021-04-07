@@ -61,5 +61,6 @@ export ASDF_DIR=$(brew --prefix asdf)
 
 [ -f "$HOME/.bash_profile_b" ] && source "$HOME/.bash_profile_b"
 export PATH="$HOME/.bin:$PATH"
+shopt -s direxpand
 
 eval "$(starship init bash)"
