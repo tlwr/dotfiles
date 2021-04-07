@@ -35,3 +35,6 @@
 
 [init]
   defaultBranch = main
+
+[includeIf "gitdir:~/git_tree/"]
+  path = ~/.gitconfig_b
