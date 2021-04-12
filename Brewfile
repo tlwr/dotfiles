@@ -33,7 +33,7 @@ brew "nvim" unless OS.mac?
 brew "cfssl"
 brew "curl"
 brew "angle-grinder" unless OS.mac?
-brew "kubectl" unless OS.mac?
+brew "kubectl"
 brew "wget"
 brew "rsync"
 
