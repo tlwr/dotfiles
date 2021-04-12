@@ -59,7 +59,7 @@ Plug 'w0rp/ale'
 Plug 'yorickpeterse/happy_hacking.vim'
 call plug#end()
 
-let @a = '0yyp0gu$0:.s/ /./e0:.s/ \+//geI<A@digital.cabinet-office.gov.uk>kJICo-authored-by: 07wdt<i 0:.s/ \+/ /ge:noh06wvU0k'
+let @a = '0yyp0gu$0:.s/ /./e0:.s/ \+//geI<A@booking.com>kJICo-authored-by: 07wdt<i 0:.s/ \+/ /ge:noh06wvU0k'
 
 let g:ale_linters = {
 \   'java': [],
