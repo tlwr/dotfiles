@@ -34,6 +34,7 @@ brew "cfssl"
 brew "curl"
 brew "angle-grinder" unless OS.mac?
 brew "kubectl"
+brew "openstackclient"
 brew "wget"
 brew "rsync"
 
