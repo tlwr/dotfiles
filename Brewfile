@@ -37,6 +37,7 @@ brew "kubectl"
 brew "openstackclient"
 brew "wget"
 brew "rsync"
+brew "goaccess"
 
 brew "conftest"
 
