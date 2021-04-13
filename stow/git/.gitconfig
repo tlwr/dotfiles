@@ -12,6 +12,7 @@
   cpa = cherry-pick --abort
 
   d = diff
+  ds = diff --staged
   lo = log --oneline
   pl = pull
   p = push
