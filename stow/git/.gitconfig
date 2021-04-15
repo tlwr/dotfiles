@@ -39,3 +39,6 @@
 
 [includeIf "gitdir:~/git_tree/"]
   path = ~/.gitconfig_b
+
+[push]
+	default = current
