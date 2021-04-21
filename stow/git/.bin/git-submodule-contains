@@ -8,8 +8,13 @@
 
 set -euo pipefail
 
-path=$1
-commit=$2
+path=${1:?first parameter is submodule path}
+commit=${2:?second parameter is commit-ish}
+
+if ! [ -d "$path" ]; then
+  echo "directory does not exist: ${path}"
+  exit 1
+fi
 
 good_commits=$(git -C "${path}" rev-list "${commit}"^..HEAD)
 if [ -z "${good_commits}" ]; then
