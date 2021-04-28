@@ -38,6 +38,7 @@ brew "openstackclient"
 brew "wget"
 brew "rsync"
 brew "goaccess"
+brew "wireshark"
 
 brew "conftest"
 
