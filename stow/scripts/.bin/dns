@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -ueo pipefail
+
+# ty julia
+# https://twitter.com/b0rk/status/1387490109168173057
+dig +noall +answer $@
