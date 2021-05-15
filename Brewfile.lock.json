@@ -8,10 +8,10 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "homebrew/cask": {
-        "revision": "8f07ba35dadc94212a11c74cfbfbd095e013181f"
+        "revision": "07185e0597923f336102b703505ce9c8e80156c4"
       },
       "homebrew/core": {
-        "revision": "173f4adbb716bcaaf50336f17ad98f4eb6a73fa3"
+        "revision": "36de11f53fe943c73b0f5235c78e51205bcab195"
       },
       "cloudfoundry/tap": {
         "revision": "cf07c46658f23487183be90c12b8575347acf0e9"
@@ -1090,9 +1090,9 @@
         "macOS": "10.14.6"
       },
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.3-124-g94ce323",
+        "HOMEBREW_VERSION": "3.1.4-22-gc11067c",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "173f4adbb716bcaaf50336f17ad98f4eb6a73fa3",
+        "Homebrew/homebrew-core": "36de11f53fe943c73b0f5235c78e51205bcab195",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.0",
         "macOS": "11.2.3"
