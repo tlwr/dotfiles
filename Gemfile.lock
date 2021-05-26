@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/tlwr/rubocop-govuk.git
+  revision: ce655779e45892db6ac00d6789c652ec2e506748
+  branch: main
+  specs:
+    rubocop-govuk (4.0.0.pre.1)
+      rubocop (~> 1.10.0)
+      rubocop-ast (~> 1.4.0)
+      rubocop-rails (~> 2.9.1)
+      rubocop-rake (= 0.5.1)
+      rubocop-rspec (~> 2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -51,12 +63,6 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.4.2)
       parser (>= 3.0.1.1)
-    rubocop-govuk (4.0.0.pre.1)
-      rubocop (~> 1.10.0)
-      rubocop-ast (~> 1.4.0)
-      rubocop-rails (~> 2.9.1)
-      rubocop-rake (= 0.5.1)
-      rubocop-rspec (~> 2.2.0)
     rubocop-minitest (0.12.1)
       rubocop (>= 0.90, < 2.0)
     rubocop-performance (1.11.3)
@@ -84,7 +90,7 @@ DEPENDENCIES
   pry
   pry-nav
   rspec
-  rubocop-govuk
+  rubocop-govuk!
   rubocop-minitest
   rubocop-performance
   rubocop-rails
@@ -92,4 +98,4 @@ DEPENDENCIES
   rubocop-rspec
 
 BUNDLED WITH
-   2.2.15
+   2.2.18
