@@ -15,12 +15,15 @@
   ds = diff --staged
   lo = log --oneline
   pl = pull
+  plo = pull origin
   p = push
+  po = push origin
 
   r = root
   rb = rebase --allow-empty-message -i
   rbc = rebase --continue
   rba = rebase --abort
+  rbs = rebase --skip
 
   s = status
 
