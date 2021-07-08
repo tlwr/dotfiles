@@ -120,3 +120,7 @@ map tff :TerraformFmt
 color happy_hacking
 call SourceF("~/.vimrc_b")
 call SourceF("~/.vimrc_people")
+
+if has('mouse')
+    set mouse-=a
+endif
