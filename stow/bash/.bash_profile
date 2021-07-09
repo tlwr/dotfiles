@@ -23,7 +23,7 @@ shopt -s checkwinsize
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
-. /opt/homebrew/opt/asdf/asdf.sh
+test -s /opt/homebreak/opt/asdf/adsf.sh && . /opt/homebrew/opt/asdf/asdf.sh
 
 set -o vi
 
