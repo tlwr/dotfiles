@@ -65,3 +65,6 @@ export PATH="$HOME/.bin:$PATH"
 shopt -s direxpand
 
 eval "$(starship init bash)"
+
+# opam configuration
+test -r /Users/toby/.opam/opam-init/init.sh && . /Users/toby/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
