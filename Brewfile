@@ -21,6 +21,7 @@ brew "rbenv"
 brew "ruby-build"
 brew "tfenv"
 
+brew "exa"
 brew "fzf"
 brew "gh"
 brew "git"
