@@ -45,3 +45,6 @@
 
 [push]
 	default = current
+
+[url "git@gitlab.booking.com:"]
+  insteadOf = https://gitlab.booking.com/
