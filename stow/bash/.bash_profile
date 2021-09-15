@@ -43,6 +43,7 @@ export GOENV_ROOT="$HOME/.goenv"
 
 eval "$(rbenv init -)"
 eval "$(goenv init -)"
+. $(brew --prefix asdf)/asdf.sh
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -63,8 +64,6 @@ alias tf=terraform
 
 command -v nvim >/dev/null && alias vim=nvim
 command -v bat >/dev/null && alias cat=bat
-
-export ASDF_DIR=$(brew --prefix asdf)
 
 [ -f "$HOME/.bash_profile_b" ] && source "$HOME/.bash_profile_b"
 export PATH="$HOME/.bin:$PATH"
